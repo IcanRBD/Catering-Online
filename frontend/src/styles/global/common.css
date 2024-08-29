@@ -1,0 +1,40 @@
+.upload-image {
+  min-height: 200px;
+  overflow: hidden;
+  position: relative;
+  border: 1px dashed #ccc;
+  border-radius: 0.25rem;
+}
+
+.action-drawer-btns {
+  position: sticky;
+  bottom: -1.5rem;
+  left: 1.5rem;
+  background-color: white;
+  padding: 1.5rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.empty-full {
+  height: calc(100vh - 64px);
+  align-content: center;
+}
+
+.loading-icon {
+  font-size: 3rem;
+}

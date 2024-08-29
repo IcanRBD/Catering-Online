@@ -1,0 +1,35 @@
+.bookingSummary {
+  position: sticky;
+  top: 5rem;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  width: 400px;
+  background-color: white;
+}
+
+.bookingListItem {
+  display: flex;
+  gap: 1rem;
+
+  & p:nth-child(2) {
+    min-width: 1.5rem;
+    text-align: end;
+  }
+
+  & .deleteIcon {
+    cursor: pointer;
+    color: red;
+  }
+}
+
+& .totalPrice {
+  display: flex;
+  justify-content: space-between;
+  & p {
+    font-weight: bold;
+  }
+  & p:last-child {
+    margin-right: 30px;
+  }
+}

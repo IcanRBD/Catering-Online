@@ -1,0 +1,80 @@
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100% !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.aspect-square {
+  aspect-ratio: 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-hd {
+  aspect-ratio: 4 / 3;
+}
+
+.relative {
+  position: relative;
+}
+
+.pe-none {
+  pointer-events: none;
+}
+
+.shadow {
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.block {
+  display: block;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.object-cover {
+  object-fit: cover;
+}

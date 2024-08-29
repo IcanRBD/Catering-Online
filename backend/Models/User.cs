@@ -1,0 +1,33 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+using backend.Enums;
+using Microsoft.EntityFrameworkCore;
+
+namespace backend.Models
+{
+  [Index(nameof(Email), IsUnique = true)]
+  public class User
+  {
+    [Key]
+    public int Id { get; set; }
+
+    [Range(0, 2)]
+    public UserType Type { get; set; }
+
+    [StringLength(255)]
+    [EmailAddress]
+    public string Email { get; set; } = string.Empty;
+
+    [StringLength(255)]
+    public string Password { get; set; } = string.Empty;
+
+    public DateTime CreatedAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
+
+    [JsonIgnore]
+    public virtual ICollection<Favorite> FavoriteList { get; set; } = [];
+
+    [JsonIgnore]
+    public virtual ICollection<Booking> Bookings { get; set; } = [];
+  }
+}

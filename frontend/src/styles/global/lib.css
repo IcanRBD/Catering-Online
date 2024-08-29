@@ -1,0 +1,13 @@
+.ant-image {
+  width: 100%;
+}
+
+#catering-list {
+  .ant-image {
+    height: 100%;
+  }
+}
+
+.ant-card-body {
+  flex: 1;
+}
